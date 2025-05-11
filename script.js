@@ -38,12 +38,18 @@ document.addEventListener('DOMContentLoaded', function () {
     const SHIPPING_FEE = 0.0;
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-    // parte de produtos por:
-    const produtos = JSON.parse(localStorage.getItem('produtos')) || [];
 
-    function renderProducts() {
-        const container = document.getElementById('produtos-container');
-        container.innerHTML = produtos.map(produto => `
+
+
+
+
+
+// No script.js existente, substitua a parte de produtos por:
+const produtos = JSON.parse(localStorage.getItem('produtos')) || [];
+
+function renderProducts() {
+    const container = document.getElementById('produtos-container');
+    container.innerHTML = produtos.map(produto => `
         <div class="produto-card" data-categoria="${produto.category}">
             <img src="${produto.img}" alt="${produto.name}" class="produto-img">
             <div class="produto-info">
@@ -60,10 +66,11 @@ document.addEventListener('DOMContentLoaded', function () {
             </div>
         </div>
     `).join('');
-    }
+}
 
-    // Chame renderProducts() após o carregamento da página
-    document.addEventListener('DOMContentLoaded', renderProducts);
+// Chame renderProducts() após o carregamento da página
+document.addEventListener('DOMContentLoaded', renderProducts);
+
 
     // Funções utilitárias
     const utils = {
@@ -186,7 +193,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 item.quantity += 1;
             }
             // // Atualiza a exibição do carrinho
-            updateCart();
+             updateCart();
         },
 
         checkout: () => {
@@ -234,8 +241,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
             //elements.addressWarn.style.display = 'none';
 
-            // Fecha o modal do carrinho
-            elements.cartModal.classList.remove('show');
+              // Fecha o modal do carrinho
+              elements.cartModal.classList.remove('show');
 
 
         }
@@ -289,7 +296,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Delegation para eventos dinâmicos
     document.addEventListener('click', function (e) {
-        const removeBtn = e.target.closest('.remove-item-btn');
+        const removeBtn = e.target.closest('.remove-item');
         if (removeBtn) {
             e.preventDefault();
             cartActions.removeItem(removeBtn.dataset.id);
