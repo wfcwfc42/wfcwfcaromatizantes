@@ -30,7 +30,7 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#produtos">Produtos</a></li>
                 <li><a href="#sobre">Sobre</a></li>
-                <!-- <li><a href="#contato">Contato</a></li> -->
+                <li><a href="#contato">Contato</a></li>
                 <li><a href="#" id="cart-btn"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
                 </li>
             </ul>
@@ -89,6 +89,8 @@
             <button class="filtro-btn" data-categoria="1litro">1 Litro</button>
         </div>
         <div class="produtos-container" id="produtos-container">
+
+            <!-- Produtos aqui (mesmo conteúdo do original) -->
 
             <!--- Produto 1-->
             <div class="produto-card" data-categoria="500ml">
@@ -156,7 +158,7 @@
             </div>
 
             <!-- Produto 6 -->
-            <div class="produto-card" data-categoria="500ml">
+            <!-- <div class="produto-card" data-categoria="500ml">
                 <img src="assets/img_500.jpg" alt="Bamboo" class="produto-img">
                 <div class="produto-info">
                     <h3>Bamboo - 500ml</h3>
@@ -166,20 +168,20 @@
                     <button class="add-carrinho" data-id="6" data-name="Bamboo" data-price="35.00"
                         data-img="assets/img_500.jpg">Adicionar ao Carrinho</button>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Produto 7 -->
-            <div class="produto-card" data-categoria="500ml">
-                <img src="assets/img_500.jpg" alt="Flor de Café" class="produto-img">
+            <!-- <div class="produto-card" data-categoria="500ml">
+                <img src="assets/img_500.jpg" alt="Capim Limão" class="produto-img">
                 <div class="produto-info">
                     <h3>Flor de Café - 500ml</h3>
                     <p>A essência Flor de Café é uma criação olfativa que combina a riqueza do café com a suavidade e
                         frescor das flores, resultando em uma fragrância única e intrigante.</p>
                     <span class="preco">R$ 35,00</span>
-                    <button class="add-carrinho" data-id="7" data-name="Flor de Café" data-price="35.00"
+                    <button class="add-carrinho" data-id="7" data-name="Capim Limão" data-price="35.00"
                         data-img="assets/img_500.jpg">Adicionar ao Carrinho</button>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Produto 8 -->
             <div class="produto-card" data-categoria="500ml">
@@ -234,7 +236,7 @@
             </div>
 
             <!-- Produto 12 - 1 Litro -->
-            <div class="produto-card" data-categoria="1litro">
+            <!-- <div class="produto-card" data-categoria="1litro">
                 <img src="assets/img-refil-1ltro.jpg" alt="Refil Mamãe Bebê" class="produto-img">
                 <div class="produto-info">
                     <h3>Refil Mamãe Bebê - 1 Litro</h3>
@@ -244,7 +246,7 @@
                     <button class="add-carrinho" data-id="12" data-name="Refil Mamãe Bebê" data-price="60.00"
                         data-img="assets/img-refil-1ltro.jpg">Adicionar ao Carrinho</button>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Produto 13 - 1 Litro -->
             <div class="produto-card" data-categoria="1litro">
@@ -362,6 +364,24 @@
         </div>
 
     </footer>
+
+<!-- 
+    // Inicialização do Slick Slider
+    $(document).ready(function(){
+    $('.slider').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows: true,
+    prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>'
+    });
+    }); -->
+
 
     <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
